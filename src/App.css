@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  background: rgb(0, 0, 0);
+}
+
+h1 {
+  color: gold;
+  text-align: center;
+  font-weight: bold;
+}
+
+#todo-list {
+  width: 450px;
+  margin: 60px auto;
+}
+
+form,
+.todo {
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+#status {
+  font-size: 16px;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+#option-status {
+  font-size: 16px;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+form input {
+  padding: 4px 8px;
+  flex-grow: 1;
+  margin-right: 16px;
+  background-color: white;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-size: 16px;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(146, 146, 146);
+}
+
+button:active {
+  background-color: rgb(146, 146, 146);
+}
+
+button:focus {
+  outline: 0;
+}
+
+input[type="text"] {
+  font-size: 20px;
+  font-family: monospace;
+  background-color: white;
+}
+
+.todo input[type="checkbox"] {
+  transform: scale(1.8) translateY(1px);
+  margin: 0 16px 0 0;
+  cursor: pointer;
+}
+
+.todo-text input {
+  padding: 4px;
+}
+
+.todo-text {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+
+  color: white;
+}
+
+.todo-completed {
+  display: flex;
+  margin: 10px 0;
+}
+
+.todo-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1em;
+}
